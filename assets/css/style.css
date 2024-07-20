@@ -166,22 +166,20 @@ ul.accordion-list li span {
     justify-content: space-between;
 }
 
-ul.accordion-list li h3:after {
-    content: "\f078";
-    font-family: var(--icon);
-    transition: all 0.3s ease-in-out;
-    font-size: 16px;
-    font-weight: 600;
-    flex-shrink: 0;
+ul.accordion-list li.active .fa-solid {
+    transition: transform 1s;
+    transform: rotate(180deg);
 }
-
+ul.accordion-list li .fa-solid {
+    transition: transform 1s;
+    transform: rotate(0deg);
+}
 .accordion-list li.active h4::after {
     color: #9CA3AF;
     content: "\f077";
 }
-
-ul.accordion-list li.active h3:after {
-    content: "\f077";
+.fancybox-button svg{
+    color:white;
 }
 
 .answer p {
@@ -204,7 +202,7 @@ body {
     line-height: 1;
     color: #000000;
     background: #f6f5f8;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 body.inner-header {
@@ -592,7 +590,10 @@ header.sticky {
     left: 100%;
     top: 0;
 }
-
+.pckg .bottom ul li i {
+    margin: 4px 5px 0 0;
+    
+}
 .dropdown ul li a {
     font-size: 16px;
     line-height: 30px;
@@ -787,7 +788,7 @@ header.sticky {
     height: 100%;
     left: 0;
     top: 0;
-    background: #E4FF3E;
+    background: #f5ca37;
     border-radius: 100%;
     z-index: -1;
     animation: scale 2s infinite alternate;
@@ -1356,10 +1357,10 @@ form.form-ban .hdng-wrap p {
 }
 
 .pckg .bottom ul li::before {
-    font-family: var(--icon);
+    /* font-family: var(--icon); */
     color: var(--primary);
     margin-right: 12px;
-    content: "\f058";
+    /* content: "\f058"; */
 }
 
 .pckg .bottom {
@@ -1419,7 +1420,7 @@ form.form-ban .hdng-wrap p {
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
-    color: #132F5A;
+    color: #603535;
 }
 
 .sec-heading.white * {
@@ -1436,7 +1437,7 @@ form.form-ban .hdng-wrap p {
 .sec-heading .sub {
     font-family: var(--font-accent);
     font-size: 32px;
-    color: #132F5F;
+    color: #603535;
     line-height: 55px;
     position: relative;
     margin-bottom: 1rem;
@@ -1447,7 +1448,7 @@ form.form-ban .hdng-wrap p {
     content: "";
     width: 75%;
     height: 6px;
-    background: #132F5A;
+    background: #603535;
     position: absolute;
     bottom: -4px;
     left: -15%;
@@ -1667,6 +1668,7 @@ footer {
     background: #0f1525;
     padding: 1.5rem 0;
     text-align: center;
+    background: linear-gradient(180deg, #5a0f0f 0%, #4e0f0f 25%, #421010 50%, #361212 75%, #131D2A 100%);
 }
 
 .copyright {
@@ -2123,7 +2125,7 @@ header .contact-wrap {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    background: var(--primary);
+    background: #9f2222;
     text-align: center;
     transition: all 0.3s ease 0s;
 }
@@ -2199,7 +2201,7 @@ header .contact-wrap {
 
 .cta-wrap::after {
     content: "";
-    background: linear-gradient(180deg, #0F2F5A 0%, #0F2B4E 25%, #102642 50%, #122236 75%, #131D2A 100%);
+    background: linear-gradient(180deg, #5a0f0f 0%, #4e0f0f 25%, #421010 50%, #361212 75%, #131D2A 100%);
     position: absolute;
     width: 150%;
     height: 80%;
@@ -2209,7 +2211,7 @@ header .contact-wrap {
 }
 
 .bg-dark {
-    background: linear-gradient(0deg, #0E2F5B 0%, #0D2B4F 25%, #0E2642 50%, #102236 75%, #121D2A 100%);
+  background: linear-gradient(180deg, #5a0f0f 0%, #4e0f0f 25%, #421010 50%, #361212 75%, #131D2A 100%);
     overflow: hidden;
     padding-bottom: 0;
 }
@@ -2439,9 +2441,9 @@ form.form-foot {
     gap: 1rem;
     align-items: start;
     padding: 30px;
+    background: linear-gradient(180deg, #5a0f0f 0%, #4e0f0f 25%, #421010 50%, #361212 75%, #131D2A 100%);
     border-radius: 20px;
-    background: linear-gradient(180deg, #0F2F5A 0%, #0F2B4E 25%, #102642 50%, #122236 75%, #131D2A 100%);
-    color: white;
+    color: aliceblue;
 }
 
 form.form-foot input,
@@ -2516,7 +2518,7 @@ form.form-foot button {
     letter-spacing: -0.04em;
     margin: 0;
     padding-bottom: 10px;
-    color: #3555C7;
+    color: #5b0e0e;
 }
 
 .popup_head h5 {
@@ -2546,7 +2548,7 @@ form.form-foot button {
 }
 
 .startedForm .popup_form_style button {
-    background: #023AAE;
+    background: #791313;
     border-radius: 68px;
     color: #fff;
     font-weight: bold;
@@ -2585,7 +2587,8 @@ form.form-foot button {
 }
 
 .startedForm .popup_form_style button span em {
-    background: #02308E;
+    border-right: 1px solid #f5ca37;
+    b0e0e;
     border-radius: 70px;
     width: 60px;
     height: 60px;
@@ -2600,7 +2603,7 @@ form.form-foot button {
 
 .startedForm .popup_form_style button:hover:before {
     width: 100%;
-    background: #02308E;
+    background: #4c1919;
     opacity: 1;
     transition: 0.4s all ease-in-out;
 }
@@ -3082,7 +3085,7 @@ ul.modern-logos li:hover .design-list span {
         content: none;
     }
     section.cta-sec {
-        background: linear-gradient(180deg, #0F2F5A 0%, #0F2B4E 25%, #102642 50%, #122236 75%, #131D2A 100%);
+        background: linear-gradient(180deg, #5a0f0f 0%, #4e0f0f 25%, #421010 50%, #361212 75%, #131D2A 100%);
         text-align: center;
     }
     section {
