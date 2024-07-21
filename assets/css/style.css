@@ -98,7 +98,14 @@ ul.navbar-nav.cnt-info.floating-btn {
 .floating-btn.sticky {
     opacity: 1;
 }
-
+.fancybox-slide--html .fancybox-close-small {
+    background: #791313;
+    color: currentcolor;
+    padding: 10px;
+    right: 30%;
+    top: 15%;
+    border-radius: 50%;
+}
 .cnt-info li::before {
     content: "";
     width: 39px;
@@ -3175,6 +3182,10 @@ ul.modern-logos li:hover .design-list span {
 /* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .fancybox-slide--html .fancybox-close-small {
+        right: 26%;
+        top: 13%;
+    }
     /* Styles */
 }
 
@@ -3418,8 +3429,8 @@ ul.modern-logos li:hover .design-list span {
         font-size: 26px;
     }
     .fancybox-slide--html .fancybox-close-small {
-        background: white;
-        border-radius: 100%;
+       top: 10%;
+       right: 3%;
     }
     #getStartedForm,
     #leadForm {
