@@ -1538,6 +1538,9 @@ section {
     padding: 4rem 0;
     position: relative;
 }
+section#testimonial {
+    padding: 0px;
+}
 section.offer {
     padding: 4rem 0 0rem 0;
 }
