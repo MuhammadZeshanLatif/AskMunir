@@ -2768,7 +2768,7 @@ ul.check-list {
 }
 ul.check-list.blk-clr {
     color: var(--secondary);
-    line-height: 24px;
+    line-height: 24px ;
     
 }
 
