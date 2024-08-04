@@ -434,7 +434,7 @@ header.sticky {
 
 .logo img {
     display: block;
-    max-width: 180px;
+    max-width: 100px;
 }
 
 /* Hamburger Menu */
@@ -1538,7 +1538,12 @@ section {
     padding: 4rem 0;
     position: relative;
 }
-
+section.offer {
+    padding: 4rem 0 0rem 0;
+}
+section.bg-whit {
+    background: white;
+}
 .padding-2 {
     padding: 1rem 0;
 }
@@ -2762,6 +2767,11 @@ ul.check-list {
     color: white;
     margin-bottom: 1.5rem;
 }
+ul.check-list.blk-clr {
+    color: var(--secondary);
+    line-height: 24px;
+    
+}
 
 ul.check-list li::before {
     /* content: "\f00c";
@@ -3468,6 +3478,6 @@ ul.modern-logos li:hover .design-list span {
         display: none;
     }
     ul.modern-logos.dnone li:after {
-        display: none;
+        display: none ;
     }
 }
