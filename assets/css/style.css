@@ -1802,7 +1802,7 @@ a.arrow-btn {
 
 .testimonials:before {
     content: "";
-    background: url("../images/testi-bg.webp")no-repeat;
+    background: url("../images/testi-bg2.webp")no-repeat;
     background-size: cover;
     position: absolute;
     width: 100%;
