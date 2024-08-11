@@ -433,8 +433,10 @@ header.sticky {
 }
 
 .logo img {
+    padding: 8px 0 0 0;
+    /* height: 38px; */
     display: block;
-    max-width: 100px;
+    /* max-width: 201px; */
 }
 
 /* Hamburger Menu */
@@ -673,7 +675,7 @@ header.sticky {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url("../images/banner/em.svg")no-repeat;
+    /* background: url("../images/banner/em.svg")no-repeat; */
     background-size: contain;
     left: -15%;
     animation: moving 2s infinite alternate;
@@ -3232,6 +3234,7 @@ ul.modern-logos li:hover .design-list span {
 /* Android (Pixel 2) */
 
 @media only screen and (min-width: 412px) and (max-width: 684px) and (orientation: portrait) {
+    
     /* Styles */
 }
 
@@ -3244,6 +3247,9 @@ ul.modern-logos li:hover .design-list span {
 @media only screen and (min-width: 280px) and (max-width: 767px) and (orientation: portrait) {}
 
 @media only screen and (min-width: 280px) and (max-width: 767px) {
+    .logo img {
+       width:50%;      
+    }
     form.form-ban .percent {
         font-size: 32px;
         font-weight: 700;
