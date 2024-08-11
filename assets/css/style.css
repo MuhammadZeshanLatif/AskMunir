@@ -3112,7 +3112,7 @@ ul.modern-logos li:hover .design-list span {
         grid-template-columns: repeat(2, 1fr);
     }
     .contact-wrap.resp {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
@@ -3192,6 +3192,13 @@ ul.modern-logos li:hover .design-list span {
 /* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .row.g-4.align-items-center {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   .row.g-4.align-items-center.revers {
+            flex-direction: column;
+    }
     .fancybox-slide--html .fancybox-close-small {
         right: 26%;
         top: 13%;
@@ -3322,7 +3329,8 @@ ul.modern-logos li:hover .design-list span {
         display: none;
     }
     .contact-wrap.resp {
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
     }
     .contact-wrap.resp hr {
         display: none;
@@ -3483,5 +3491,12 @@ ul.modern-logos li:hover .design-list span {
     }
     ul.modern-logos.dnone li:after {
         display: none ;
+    }
+    .row.g-4.align-items-center {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   .row.g-4.align-items-center.revers {
+            flex-direction: column;
     }
 }
